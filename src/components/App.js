@@ -4,22 +4,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import ReactDOM from "react-dom";
 
+import { AuthProvider} from "../contexts/AuthContext"
 
-// import { AuthProvider } from "../contexts/AuthContext"
 
-// import Chats from "./Chats"
+import Chats from "./Chats"
 import Login from "./Login.js"
 
 function App() {
   return (
     <div style={{ fontFamily: 'Avenir' }}>
       <Router>
-        {/* <AuthProvider> */}
+        <AuthProvider>
           <Switch>
-            {/* <Route path="/chats" component={Chats} /> */}
+            <Route path="/chats" component={Chats} />
             <Route  path="/" component={Login} />
           </Switch>
-        {/* </AuthProvider> */}
+        </AuthProvider>
       </Router>
     </div>
   )

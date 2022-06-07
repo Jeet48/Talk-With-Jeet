@@ -55,7 +55,7 @@
 
 #login-card {
   position: relative;
-  top: calc(50vh - 144px);
+  top: calc(50vh - 280px);
   left: calc(50vw - 210px);
   padding-top: 36px;
   padding-bottom: 66px;
@@ -71,15 +71,24 @@
   padding: 12px;
   border-radius: 8px;
   display: inline-block;
+  height: auto;
 }
 
-.facebook {
-  background-color: #3b5998;
+.github {
+  background-color: black;
+  color: white;
 }
 
 .google {
   background-color: #c6542f;
   color: white;
+  height: auto;
+  
+}
+
+.log {
+  background-color: aquamarine;
+  color: black;
 }
 
 #loading-container {
